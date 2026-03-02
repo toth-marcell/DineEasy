@@ -1,0 +1,26 @@
+menu_id,restaurant_id,dish_name,price
+1,1,Goulash,10.99
+2,1,Chicken Paprikash,11.99
+3,2,Mămăligă cu Brânză,8.49
+4,2,Sarmale,12.99
+5,3,Placki Ziemniaczane,14.99
+6,3,Bigos,9.99
+7,4,Fresh Grilled Fish,17.99
+8,4,Octopus Salad,13.49
+9,5,Pizza Margherita,10.99
+10,5,Tiramisu,6.99
+11,6,Beef Stew,12.99
+12,6,Dobos Torte,8.99
+13,7,Ciorbă de Burtă,9.99
+14,7,Mămăligă cu Sarmale,15.99
+15,8,Pierogi Ruskie,10.99
+16,8,Zurek Soup,7.49
+17,9,Grilled Salmon,16.99
+18,9,Crispy Calamari,11.99
+19,10,Spaghetti Carbonara,13.99
+20,10,Panna Cotta,6.49
+21,11,Chicken Paprikash,11.99
+22,11,Somlói Galuska,7.99
+23,12,Ciorbă de Perișoare,10.49
+24,12,Cozonac,9.99
+25,13,Kotlet Schabowy,12.99

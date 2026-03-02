@@ -1,0 +1,18 @@
+<%- include ("head") %>
+<% if (user) { %>
+<% } else { %>
+<form action="/login" method="post" class="border border-secondary rounded-2 p-5 w-50 mx-auto">
+    <h2>Log in</h2>
+    <label class="d-block my-2">
+        Email
+        <input type="email" class="form-control" name="email">
+    </label>
+    <label class="d-block my-2">
+        Password
+        <input type="password" class="form-control" name="password">
+    </label>
+    <button type="submit" class="btn btn-secondary d-block mx-auto my-2">Log in</button>
+    <a href="/register" class="d-block mx-auto my-2"><button type="button" class="btn btn-light">Register</button></a>
+</form>
+<% } %>
+<%- include ("foot") %>

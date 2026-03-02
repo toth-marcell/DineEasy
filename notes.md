@@ -1,0 +1,3 @@
+- Is the startup called "DineEase" or "DineEasy" (both names are used in the project description)?
+- the development-and-deployment.md file linked in the readme is missing
+- the "Infrastructure List" is nowhere to be found

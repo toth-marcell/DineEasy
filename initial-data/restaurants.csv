@@ -1,0 +1,16 @@
+restaurant_id,name,location,cuisine,rating
+1,Szép Étterem,Budapest,Hungarian,4.6
+2,La Piața,Bucharest,Romanian,4.3
+3,Gospoda Krakowska,Warsaw,Polish,4.8
+4,Fisherman's Hut,Budapest,Seafood,4.2
+5,Casa del Gusto,Bucharest,Italian,4.4
+6,Kék Duna Étterem,Budapest,Hungarian,4.5
+7,Brânza și Mămăligă,Cluj-Napoca,Romanian,4.2
+8,Czerwona Karczma,Krakow,Polish,4.6
+9,Móló Rózsa Étterem,Budapest,Seafood,4.7
+10,Trattoria Bella,Varna,Italian,4.1
+11,Paradicsom Étterem,Szeged,Hungarian,4.3
+12,Sarmale Bistro,Timisoara,Romanian,4.7
+13,Smaczne Pierogi,Wroclaw,Polish,4.5
+14,Halász Fogadó,Székesfehérvár,Seafood,4.4
+15,Vivace Ristorante,Bucharest,Italian,4.8

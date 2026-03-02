@@ -1,0 +1,30 @@
+<%- include ("head") %>
+<form method="post" class="border border-secondary rounded-2 p-5 w-50 mx-auto">
+    <h2>Registration</h2>
+    <label class="d-block my-2">
+        Restaurant Name
+        <input type="text" class="form-control" name="resturantName">
+    </label>
+    <div class="row">
+        <label class="d-block my-2 col-6">
+            Cuisine
+            <input type="text" class="form-control" name="resturantName">
+        </label>
+        <label class="d-block my-2 col-6">
+            Location
+            <input type="text" class="form-control" name="resturantName">
+        </label>
+    </div>
+    <hr>
+    <label class="d-block my-2">
+        Email
+        <input type="email" class="form-control" name="email">
+    </label>
+    <label class="d-block my-2">
+        Password
+        <input type="password" class="form-control" name="password">
+    </label>
+    <button type="submit" class="btn btn-secondary d-block mx-auto my-2">Create Restaurant</button>
+    <a href="/" class="d-block mx-auto my-2"><button type="button" class="btn btn-light ">Back to login</button></a>
+</form>
+<%- include ("foot") %>
