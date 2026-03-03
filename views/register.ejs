@@ -1,29 +1,45 @@
 <%- include ("head") %>
-<form method="post" class="border border-secondary rounded-2 p-5 w-50 mx-auto">
+<form method="post" class="border border-secondary rounded-2 p-5 mx-auto">
     <h2>Registration</h2>
     <label class="d-block my-2">
         Restaurant Name
-        <input type="text" class="form-control" name="resturantName">
+        <input type="text" class="form-control" name="resturantName" value="<%= resturantName %>">
     </label>
     <div class="row">
         <label class="d-block my-2 col-6">
             Cuisine
-            <input type="text" class="form-control" name="resturantName">
+            <input type="text" class="form-control" name="resturantCuisine" value="<%= resturantCuisine %>">
         </label>
         <label class="d-block my-2 col-6">
             Location
-            <input type="text" class="form-control" name="resturantName">
+            <div class="input-group">
+                <img src="/assets/location-iconvector.svg" class="input-group-text">
+                <input type="text" class="form-control" name="resturantLocation" value="<%= resturantLocation %>">
+            </div>
         </label>
     </div>
     <hr>
     <label class="d-block my-2">
+        Name
+        <input type="text" class="form-control" name="name" value="<%= name %>">
+    </label>
+    <label class="d-block my-2">
         Email
-        <input type="email" class="form-control" name="email">
+        <div class="input-group">
+            <img src="/assets/mail-iconvector.svg" class="input-group-text">
+            <input type="email" class="form-control" name="email" value="<%= email %>">
+        </div>
     </label>
     <label class="d-block my-2">
         Password
-        <input type="password" class="form-control" name="password">
+        <div class="input-group">
+            <img src="/assets/lock-closed-iconvector.svg" class="input-group-text">
+            <input type="password" class="form-control" name="password" value="<%= password %>">
+        </div>
     </label>
+    <% if (typeof(msg) != "undefined") { %>
+    <p class="text-danger"><%= msg %></p>
+    <% } %>
     <button type="submit" class="btn btn-secondary d-block mx-auto my-2">Create Restaurant</button>
     <a href="/" class="d-block mx-auto my-2"><button type="button" class="btn btn-light ">Back to login</button></a>
 </form>

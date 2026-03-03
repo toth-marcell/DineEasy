@@ -68,13 +68,13 @@ const reviewLines = (await readFile("initial-data/reviews.csv"))
   .slice(1, -1);
 
 for (const line of reviewLines) {
-  const fields = line.split(",");
+  const fields = line.split(",", 5);
   Review.create({
     id: parseInt(fields[0]),
     RestaurantId: parseInt(fields[1]),
     userName: fields[2],
     rating: parseFloat(fields[3]),
-    comment: fields[4],
+    comment: fields[4].slice(1, -1),
   });
 }
 

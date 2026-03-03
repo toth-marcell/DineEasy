@@ -1,0 +1,11 @@
+<%- include ("head") %>
+<h2>Select Restaurant</h2>
+<form method="post" class="mx-auto">
+    <button type="submit" class="btn btn-light d-block mx-auto">Unselect current restaurant</button>
+    <hr>
+    <% for (restaurant of restaurants) { %>
+    <button type="submit" class="btn btn-light d-block mx-auto" name="RestaurantId"
+        value="<%= restaurant.id %>"><%= restaurant.name %></button>
+    <% } %>
+</form>
+<%- include ("foot") %>

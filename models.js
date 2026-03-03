@@ -101,4 +101,14 @@ export const Review = sequelize.define("Review", {
 Review.belongsTo(Restaurant);
 Restaurant.hasMany(Review);
 
+export const ReviewReply = sequelize.define("ReviewReply", {
+  text: {
+    type: DataTypes.STRING,
+    allowNull: false,
+  },
+});
+
+ReviewReply.belongsTo(Review);
+Review.hasMany(ReviewReply);
+
 await sequelize.sync({ force: true });

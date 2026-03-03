@@ -1,8 +1,24 @@
 <header>
-    <mav class="navbar">
+    <nav class="navbar">
         <% if (user) { %>
+        <h1 class="navbar-brand"><a href="/"><img src="assets/logovector.svg"></a></h1>
+        <ul>
+            <% if (user.role == "dineEasyAdmin") { %>
+            <li class="nav-item">
+                <a href="/selectRestaurant"><button type="button" class="btn btn-light">
+                        <img src="/assets/building-iconvector.svg">
+                    </button></a>
+            </li>
+            <% } %>
+            <li class="nav-item">
+                <a href="/logout"><button type="button" class="btn btn-light">
+                        <img src="/assets/logout-iconvector.svg">
+                        Log out
+                    </button></a>
+            </li>
+        </ul>
         <% } else { %>
-        <h1 class="m-auto"><a href="/"><img src="assets/logovector.svg" alt="" class="navbar-brand"></a></h1>
+        <h1 class="m-auto navbar-brand"><a href="/"><img src="assets/logovector.svg"></a></h1>
         <% } %>
-    </mav>
+    </nav>
 </header>

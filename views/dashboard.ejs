@@ -1,16 +1,55 @@
 <%- include ("head") %>
 <% if (user) { %>
+<% if (user.Restaurant) { %>
+<div class="row w-50 mx-auto">
+    <label class="d-block my-2 col-6">
+        Restaurant Name
+        <input type="text" class="form-control" disabled value="<%= user.Restaurant.name %>">
+    </label>
+    <label class="d-block my-2 col-3">
+        Cuisine
+        <input type="text" class="form-control" disabled value="<%= user.Restaurant.Cuisine.name %>">
+    </label>
+    <label class="d-block my-2 col-3">
+        Location
+        <input type="text" class="form-control" disabled value="<%= user.Restaurant.Location.name %>">
+    </label>
+</div>
+<div class="dashboardGrid">
+    <a href="" class=""><button class="btn btn-light rounded-2">
+            <img src="/assets/edit-iconvector.svg">
+            Edit Profile
+        </button></a>
+    <a href="" class=""><button class="btn btn-light rounded-2">
+            <img src="/assets/restaurant-iconvector.svg">
+            Manage Menu
+        </button></a>
+    <a href="" class=""><button class="btn btn-light rounded-2">
+            <img src="/assets/table-iconvector.svg">
+            Reservations
+        </button></a>
+    <a href="" class=""><button class="btn btn-light rounded-2">
+            <img src="/assets/review-iconvector.svg">
+            Reviews
+        </button></a>
+</div>
+<% } else { %>
+<p class="text-danger">You don't have a restaurant selected!</p>
+<% } %>
 <% } else { %>
 <form action="/login" method="post" class="border border-secondary rounded-2 p-5 w-50 mx-auto">
     <h2>Log in</h2>
     <label class="d-block my-2">
         Email
-        <input type="email" class="form-control" name="email">
+        <input type="email" class="form-control" name="email" value="<%= email %>">
     </label>
     <label class="d-block my-2">
         Password
-        <input type="password" class="form-control" name="password">
+        <input type="password" class="form-control" name="password" value="<%= password %>">
     </label>
+    <% if (typeof(msg) != "undefined") { %>
+    <p class="text-danger"><%= msg %></p>
+    <% } %>
     <button type="submit" class="btn btn-secondary d-block mx-auto my-2">Log in</button>
     <a href="/register" class="d-block mx-auto my-2"><button type="button" class="btn btn-light">Register</button></a>
 </form>

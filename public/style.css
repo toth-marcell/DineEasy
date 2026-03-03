@@ -1,5 +1,35 @@
+nav li {
+  display: inline-block;
+}
 a:has(button) {
   text-decoration: none;
   display: block;
   width: fit-content;
+}
+h2 {
+  text-align: center;
+  font-weight: bold;
+}
+form {
+  max-width: 768px;
+}
+img.input-group-text {
+  max-width: 50px;
+}
+.dashboardGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  width: fit-content;
+  margin: auto;
+  gap: 10px;
+}
+.dashboardGrid button {
+  width: 250px;
+  height: 250px;
+  border: 1px solid currentColor;
+}
+.dashboardGrid img {
+  display: block;
+  margin: auto;
 }
